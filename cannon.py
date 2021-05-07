@@ -22,8 +22,8 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        speed.x = (x + 300) / 25   #Se modificó la velocidad en x de la bola roja.
+        speed.y = (y + 300) / 25   #Se modificó la velocidad en y de la bola roja.
 
 def inside(xy):
     "Return True if xy within screen."
@@ -51,7 +51,7 @@ def move():
         targets.append(target)
 
     for target in targets:
-        target.x -= 0.5
+        target.x -= 0.1   #Modifica la velocidad en x de los objetivos.
 
     if inside(ball):
         speed.y -= 0.35
