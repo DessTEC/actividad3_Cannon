@@ -68,7 +68,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            target.x = 200 #Si el objetivo se sale del limete regresa este a si posicion inicial y no cierra el juego.
 
     ontimer(move, 50)
 
