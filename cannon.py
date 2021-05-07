@@ -51,7 +51,7 @@ def move():
         targets.append(target)
 
     for target in targets:
-        target.x -= 0.1   #Modifica la velocidad en x de los objetivos.
+        target.x -= 2   #Modifica la velocidad en x de los objetivos.
 
     if inside(ball):
         speed.y -= 0.35
